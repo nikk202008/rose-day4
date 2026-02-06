@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top, #3a003a, #0b0014);
+  overflow: hidden;
+  color: white;
+}
+
+/* Start Screen */
+.start-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#startBtn {
+  padding: 18px 36px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff5f9e, #ff9966);
+  color: white;
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.7);
+  transition: transform 0.2s ease;
+}
+
+#startBtn:hover {
+  transform: scale(1.05);
+}
+
+/* Main Content */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(255, 105, 180, 0.3);
+  animation: fadeIn 1s ease forwards;
+}
+
+.card h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
